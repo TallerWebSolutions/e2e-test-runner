@@ -1,0 +1,7 @@
+{
+  "name": "e2e-test-runner",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Luiz Henrique Guerra <lhguerra@gmail.com>",
+  "license": "MIT"
+}
