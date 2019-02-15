@@ -4,7 +4,12 @@ const cypress = require('cypress')
 const server = express()
 
 server.get('/:project', (req, res) => {
-  cypress.run({ project: `./projects/${req.params.project}` })
+  cypress.run({
+    project: `./projects/${req.params.project}`,
+    key: req.query.key,
+    record: true,
+  })
+
   res.send('Running Tests!')
 })
 
